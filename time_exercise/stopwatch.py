@@ -1,21 +1,24 @@
 from time import sleep
 
 
-def print_elapsed_time():
-    print("00:00:01", end="\r")
-    sleep(1)
-    print("00:00:02", end="\r")
-    sleep(1)
-    print("00:00:03", end="\r")
-    sleep(1)
-    print("00:00:04", end="\r")
-    sleep(1)
-    print("00:00:05", end="\r")
-    sleep(1)
-    print("00:00:06", end="\r")
-    sleep(1)
-    print("00:00:07", end="\r")
-    sleep(1)
-    print("00:00:08", end="\r")
-    sleep(1)
-    print("00:00:09")
+def print_elapsed_time(ms):
+    """
+    Prints time in HH:MM:SS format given number of milliseconds.
+    Input is number of milliseconds to print.
+    """
+    seconds = ms / 1000
+    print(seconds, end="\r")
+
+
+def stopwatch():
+    print("Press 's' to start stopwatch")
+    while True:
+        pressed_key = input()
+        if pressed_key == 's':
+            break
+    # elapsed milli-seconds
+    i = 0
+    while True:
+        sleep(0.001)
+        i += 1
+        print_elapsed_time(i)
