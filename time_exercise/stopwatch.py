@@ -22,3 +22,6 @@ def stopwatch():
         sleep(0.001)
         i += 1
         print_elapsed_time(i)
+
+if __name__ == "__main__":
+    stopwatch()

@@ -26,3 +26,6 @@ def stopwatch2():
     except KeyboardInterrupt:
         # Handle the Ctrl+C exception to keep its error message from displaying.
         print('\nDone.')
+
+#if __name__ == "__main__":
+ #   stopwatch2()
