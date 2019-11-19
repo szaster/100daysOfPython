@@ -7,8 +7,10 @@ def eatingtimer():
         'quit.')
     BG = input()  # Type your current BG
     now = datetime.datetime.now()
-    delta15 = datetime.timedelta(minutes=15)
-    print("My current BG is ", BG, "at time ", now, "I can eat in ", delta15)
+    print("now ", datetime.datetime.now())
+    d15 = datetime.timedelta(minutes=15)
+    delta15 = now + d15
+    print("My current BG is ", BG, "at time ", now, "I can eat in ", d15, "minutes at", delta15)
     #print("you can start eating in ", delta15, " minutes, or at", now + delta15)
 
     #try:
