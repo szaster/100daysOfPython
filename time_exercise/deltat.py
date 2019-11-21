@@ -2,7 +2,6 @@ import datetime
 
 
 def eatingtimer():
-    global minutes
     targetBG = 100
     print(
         'Type your current BG.')

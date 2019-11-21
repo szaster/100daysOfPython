@@ -1,0 +1,1 @@
+from .deltat import eatingtimer
