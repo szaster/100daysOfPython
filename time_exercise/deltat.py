@@ -1,10 +1,13 @@
 import datetime
+import re
 
 
 def get_bg():
     print('Type your current bg.')
     bg = input()  # Type your current bg
-    print("My current bg is", bg)
+    if not re.match("[1-9]", bg):
+        print("Error! Only numbers are allowed.")
+        print("My current bg is", bg)
     return bg
 
 
