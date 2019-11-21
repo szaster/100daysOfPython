@@ -1,1 +1,1 @@
-from .deltat import eatingtimer
+from .deltat import eating_timer

@@ -1,3 +1,3 @@
-from time_exercise import eatingtimer
+from time_exercise import eating_timer
 
-eatingtimer()
+eating_timer()
