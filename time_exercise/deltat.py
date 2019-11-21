@@ -3,7 +3,7 @@ import datetime
 
 def eatingtimer():
     global minutes
-    targetBG = 110
+    targetBG = 100
     print(
         'Type your current BG.')
     BG = input()  # Type your current BG
@@ -18,11 +18,11 @@ def eatingtimer():
     if int(BG) > targetBG and GI == "high":
         dthigh = datetime.timedelta(minutes=30)
         deltahigh = now + dthigh
-        #print("My current BG is ", BG, "at time ", now, "I can eat in ", dthigh, "minutes at", deltahigh)
+        print("My current BG is ", BG, "at time ", now, "I can eat in ", dthigh, "minutes at", deltahigh)
     if int(BG) > targetBG and GI == "moderate":
         dthigh = datetime.timedelta(minutes=20)
         deltahigh = now + dthigh
-        #print("My current BG is ", BG, "at time ", now, "I can eat in ", dthigh, "minutes at", deltahigh)
+        print("My current BG is ", BG, "at time ", now, "I can eat in ", dthigh, "minutes at", deltahigh)
     if int(BG) > targetBG and GI == "low":
         dthigh = datetime.timedelta(minutes=10)
         deltahigh = now + dthigh
