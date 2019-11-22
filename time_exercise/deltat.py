@@ -1,19 +1,27 @@
 import datetime
-import re
+import math
 
 
-def get_bg():
+def get_bg(bg_reader):
+    """
+    Asks user to enter his/her blood glucose reading. Sanitizes user input,
+    echos read value back to user, and returns it to caller.
+    If user input cannot be parsed, function return nan.
+    :param bg_reader: Function responsible for reading information from user input
+    :return: Bg or nan
+    """
     print('Type your current bg.')
-    bg = input()  # Type your current bg
-    if not re.match("[1-9]", bg):
-        print("Error! Only numbers are allowed.")
-        print("My current bg is", bg)
-    return bg
+    bg = bg_reader()  # Type your current bg
+    try:
+        bg_as_integer = int(bg)
+        return bg_as_integer
+    except Exception as e:
+        return math.nan
 
 
 def eating_timer():
     target_bg = 100
-    bg = get_bg()
+    bg = get_bg(input)
 
     print('Type food glycemic index: "high", "moderate", or "low"')
     glycemic_index = input()  # Type food glycemic_index
