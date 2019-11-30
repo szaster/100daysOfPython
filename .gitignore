@@ -227,3 +227,4 @@ dmypy.json
 # End of https://www.gitignore.io/api/macos,python,pycharm
 
 .idea/
+Collections_module/.ipynb_checkpoints/
