@@ -6,19 +6,18 @@ cars = {
     'Jeep': ['Grand Cherokee', 'Cherokee', 'Trailhawk', 'Trackhawk']}
 
 
-# print(cars)
+#print(cars.keys())
 
 
-def get_all_jeeps(models):
-    """return a comma  + space (', ') separated string of jeep models
-           (original order)"""
-    for keys, values in cars.items():
-        if cars.keys() == 'Jeep':
-            models == cars.values()
-        return models
-    print(models)
+def get_all_jeeps():
+    #"""return a comma  + space (', ') separated string of jeep models
+     #      (original order)"""
+#for keys in cars:
+    #if cars.keys() == cars['Jeep']:
+    s = ', '
+    print(s.join(cars['Jeep']))
 
-print(get_all_jeeps(models))
+get_all_jeeps()
 
 def get_first_model_each_manufacturer(cars=cars):
     """return a list of matching models (original ordering)"""
