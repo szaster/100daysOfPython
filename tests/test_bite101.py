@@ -1,4 +1,4 @@
-from driving import allowed_driving
+from intro_py_bites.bite101_test_practice import allowed_driving
 
 
 def test_not_allowed_to_drive(capfd):
