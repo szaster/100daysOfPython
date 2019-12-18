@@ -2,6 +2,7 @@ MIN_DRIVING_AGE = 18
 group = {'tim': 17, 'bob': 18, 'ana': 24}
 
 
+
 def allowed_driving(name):
     """Print '{name} is allowed to drive' or '{name} is not allowed to drive'
        checking the passed in age against the MIN_DRIVING_AGE constant
