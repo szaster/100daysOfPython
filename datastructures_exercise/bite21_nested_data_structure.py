@@ -8,6 +8,18 @@ cars = {
     'Jeep': ['Grand Cherokee', 'Cherokee', 'Trailhawk', 'Trackhawk']}
 
 
+def get_first_model_each_manufacturer(car_db):
+    """return a list of matching models (original ordering)"""
+    #a = []
+    #for make in car_db:
+    #    a.append(car_db[make][0])
+    #return a
+    return [models[0] for models in car_db.values()]
+
+
+print("Other way: " + str(get_first_model_each_manufacturer(cars)))
+
+
 def case_insensitive_contains(container, substring):
     lower_case_substring = substring.casefold() # converts substring to lowercase
     lower_case_container = container.casefold() # converts string to lowercase
@@ -40,12 +52,7 @@ def check(car_db):
 print("trail: ", get_all_matching_models(cars, 'Trail'))
 
 
-def get_first_model_each_manufacturer(car_db):
-    """return a list of matching models (original ordering)"""
-    a = []
-    for make in car_db:
-        a.append(car_db[make][0])
-    return a
+
 
 
 

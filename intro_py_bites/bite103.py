@@ -21,7 +21,7 @@ def print_game_stats(games_won):
         if games_won[name] >1:
             print(f'{name} has won {games_won[name]} games')
         elif games_won[name] ==0:
-            print(f'{name} has won {games_won[name]} game')
+            print(f'{name} has won {games_won[name]} games')
         elif games_won[name] ==1:
             print(f'{name} has won {games_won[name]} game')
 
